@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+    <script>
+        document.onload(function () 
+        {
+            while (document.hasChildNodes())
+            {
+                document.removeChild(document.lastChild());
+            }
+        })
+    </script>
+    <style>
+        textarea
+        {
+            background-color:  inherit;
+            width: 14.8cm;
+            height: 10cm;
+            color: inherit;
+            animation-name: inherit;
+        }
+        .borde
+        {
+            background-color:  #29261d;
+            width: 15cm;
+            height: 25cm;
+            animation-name: flicker;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease;
+        }
+        a 
+        {
+            background-image:  linear-gradient(to left, #911010, #29261d);
+            color:  white;
+        }
+        body 
+        {
+            background-color: #911010;
+            color: blanchedalmond;
+            animation-name: bgAnimation;
+            animation-duration: 20s;
+            animation-iteration-count: 1;
+           
+        }
+        @keyframes bgAnimation {
+            
+            from {background: #4a3838;}
+           to { background: #911010;}
+        }
+
+        @keyframes flicker {
+            from {color: #29261d ; opacity: 0;
+                }
+            to {color: blanchedalmond; opacity: 1;}
+        }
+
+        @keyframes blood{
+            from {background-image: url("blood-splatter.png"); background-color: #29261d; 
+                }
+            to {background-color: black;}
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>
+        My Crazy Story
+  </title>
+
+  
+</head>
+
+<body> 
+    <div class="borde">
+        <article>
+            <h2>Bienvenido a My Crazy Story!</h2>
+            <h3>Esta es una historia interacctiva en la que podrás tomar varias decisiones.</h3>
+            <h3>Deberás leer lo que te ocurre seguir los <i>links</i> correspondientes a tu decisión.</h3>
+        </article>
+            <details>
+                <summary>Instrucciones</summary>
+                <p>Este es un juego en el que leerás una historia, tu historia. Tendrás que leer lo que está pasando en la historia y tomar una decisión en base a eso.<br>
+                siempre tendrás varias opciones cuando se te presente una decisión. Tu objetivo es llegar a la página que diga final. Este final va a cambiar dependiendo de lo que tú elijas.</p>    
+            </details>
+        
+            <article>
+                <h2>Juego</h2>
+            <textarea>Te despiertas con dolor de cabeza y vez que estás en una cueva. Sientes frío y tus piernas están entumecidas. Sientes que te hace falta un cigarro y estás sediento. Y hueles a alcohol. Concluyes que definitivamente tienes una resaca. Y que ayer tuvise una fiesta loca. Al principio no puede mover tu cuello, te duele mucho. Pero lentamente logras voltearte</textarea>
+        </article>
+        
+            <ul>
+                <li><a href = "voltearDerecha.html">¿Volteas a tu derecha?</a></li>
+                <li><a href = "voltearIzquierda.html">¿Volteas a tu izquierda?</a></li>
+            </ul>
+            <footer>
+                <p>Creado por Jorge De León dele19817@uvg.edu.gt</p>
+            </footer>
+
+
+    </div>
+    
+</body>
+
+</html>
