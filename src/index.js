@@ -1,4 +1,5 @@
-//import {clearDiv} from "./utils/utils.js" ;
+import {clearDiv} from "./utils/utils";
+import "./estilo.scss"
 let fondo = document.createElement("div");
 let historiaDisplay = document.createElement("textarea"); 
 fondo.className = "borde";
@@ -29,11 +30,6 @@ b2.onclick = voltIzq;
 
 }
 
-function clearDiv(div) 
-{
-    while(div.firstChild)  
-         div.removeChild(div.firstChild); 
-}
 
 function voltDer()
 {

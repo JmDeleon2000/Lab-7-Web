@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap";
+
 $borde-bgc: #4a3838;
 $blood-color: #911010;
 
@@ -47,8 +49,4 @@ $blood-color: #911010;
             to {color: blanchedalmond; }
         }
 
-        @keyframes blood{
-            from {background-image: url("blood-splatter.png"); background-color: $borde-bgc; 
-                }
-            to {background-color: black;}
-        }
+   
