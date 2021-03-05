@@ -1,0 +1,52 @@
+@import "~bootstrap/scss/bootstrap";
+
+$borde-bgc: #4a3838;
+$blood-color: #911010;
+
+
+        .borde
+        {
+            background-color:  $borde-bgc;
+            width: 15cm;
+            height: 25cm;
+            animation-name: flicker;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease;
+        }
+        button 
+        {
+            background-image:  linear-gradient(to left, $blood-color, $borde-bgc);
+            color:  white;
+        }
+        body 
+        {
+            background-color: $blood-color;
+            color: blanchedalmond;
+            animation-name: bgAnimation;
+            animation-duration: 20s;
+            animation-iteration-count: 1;
+           
+        }
+
+        textarea
+        {
+            background-color:  inherit;
+            width: 14.8cm;
+            height: 10cm;
+            color: inherit;
+            animation-name: inherit;
+        }
+        @keyframes bgAnimation {
+            
+            from {background: $borde-bgc}
+           to { background: $blood-color;}
+        }
+
+        @keyframes flicker {
+            from {color: $borde-bgc ; 
+                }
+            to {color: blanchedalmond; }
+        }
+
+   
