@@ -38,7 +38,7 @@ function voltDer()
     "Al voltear te vez cegado por el sol. Luego de acostumbrarte un poco, puedes ver que estas solo a dos metros de la entrada de la cueva Ves que un poco de la nieve está teñida de rojo. También sientes que huele como a carnicería";
     fondo.appendChild(historiaDisplay);
     let img = document.createElement("img");
-    img.src = "cueva.jpg";
+    img.src = "cueva.png";
     
 
     let b1 = document.createElement("button");
@@ -59,7 +59,7 @@ function voltIzq()
     "Ves a una mujer jóven. Es rubia y muy flaca. Tan flaca que puedes ver la forma de su craneo en su mandíbula.<br>    Ella tiene los ojos cerrados y notas que está pálida. Recuerdas haberla conocido ayer, pero tu memoria no es clara. Te quedas viendo su cara, te molesta doblar tu cuello hacia otra dirección  Algo que ves por sobre de sus rizos llama tu atención.";
     fondo.appendChild(historiaDisplay);
     let img = document.createElement("img");
-    img.src = "oso.jpg";
+    img.src = "oso.png";
     
 
     let b1 = document.createElement("button");
@@ -149,7 +149,7 @@ function dead()
     fondo.appendChild(t1);
     let img = document.createElement("img");
     fondo.appendChild(img);
-    img.src = "craneo.jpg";
+    img.src = "craneo.png";
     //alert("TODO");
 }
 
