@@ -1,3 +1,4 @@
+require("@babel/polyfill");
 import {clearDiv} from "./utils/utils";
 import "./estilo.scss"
 let fondo = document.createElement("div");
@@ -31,7 +32,7 @@ b2.onclick = voltIzq;
 }
 
 
-function voltDer()
+voltDer = () => 
 {
     clearDiv(fondo);
     historiaDisplay.innerHTML = 
@@ -52,7 +53,7 @@ function voltDer()
     fondo.appendChild(img);
 }
 
-function voltIzq()
+voltIzq = () =>
 {
     clearDiv(fondo);
     historiaDisplay.innerHTML = 
@@ -78,7 +79,7 @@ function voltIzq()
     //alert("TODO");
 }
 
-function salir()
+salir = () =>
 {
     clearDiv(fondo);
     let t1 = document.createElement("h1");
@@ -98,7 +99,7 @@ function salir()
     //alert("TODO");
 }
 
-function despMujer()
+ despMujer = () =>
 {
     clearDiv(fondo);
     let b1 = document.createElement("button");
@@ -141,7 +142,7 @@ function despMujer()
 }
 
 
-function dead()
+ dead = () =>
 {
     clearDiv(fondo);
     let t1 = document.createElement("h2");
@@ -153,7 +154,7 @@ function dead()
     //alert("TODO");
 }
 
-function afuera()
+afuera = () =>
 {
     clearDiv(fondo);
     let t1 = document.createElement("h1");
